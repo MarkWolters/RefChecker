@@ -23,7 +23,7 @@ def process_dolly():
 
 
 def process_msmarco():
-    ms_data = load_dataset('ms_marco', 'v2.1', split='validation')
+    ms_data = load_dataset('microsoft/ms_marco', 'v2.1', split='validation')
     example_ids = json.load(open('noisy_context/msmarco_example_ids.json'))
     
     chosen_examples = dict()
