@@ -6,8 +6,8 @@ gzip -d zero_context/nq/dev/nq-dev-02.jsonl.gz
 gzip -d zero_context/nq/dev/nq-dev-03.jsonl.gz
 gzip -d zero_context/nq/dev/nq-dev-04.jsonl.gz
 
-python gather_benchmark_data.py --dataset=nq
-python gather_benchmark_data.py --dataset=msmarco
-python gather_benchmark_data.py --dataset=dolly
+python3 gather_benchmark_data.py --dataset=nq
+python3 gather_benchmark_data.py --dataset=msmarco
+python3 gather_benchmark_data.py --dataset=dolly
 
 rm -r zero_context/nq
